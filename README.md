@@ -44,3 +44,15 @@ python pipeline.py --indexar
 # 4. Fazer perguntas
 python pipeline.py
 python pipeline.py -p "O que é MLflow?"
+
+# Q&A
+### por que fazemos o chunk dos textos? 
+-> porque o modelo tem um limite de tokens que consegue processar. Dessa forma, garantimos que todo 
+texto é processado e recuperado em partes 
+
+### por que fazemos a etapa de embeddings? 
+-> para que seja possível realizar operações matemáticas entre vetores e recuperar o contexto mais 
+adequado para a pergunta, utilizando similaridade entre esses vetores
+
+### o que é o embedding? 
+-> uma representação numérica do texto que pode ser recuperado no espaço vetorial
