@@ -7,11 +7,11 @@ RAG_for_ai_engineers/
 ├── 📂 dados/                    ← Arquivos .txt e .pdf
 ├── 📂 chroma_db/                ← Auto-gerado na indexação
 ├── 📂 src/
-│   ├── 🔵 etapa_01__ingestion.py     ← Leitura + chunking
-│   ├── 🟢 etapa_02__embeddings.py    ← Vetorização com Ollama
-│   ├── 🟡 etapa_03__indexing.py      ← Persistência no ChromaDB
-│   ├── 🟠 etapa_04__retrieval.py     ← Busca semântica
-│   └── 🔴 etapa_05__generation.py    ← Prompt otimizado + Mistral
+│   ├── etapa 01 ingestion.py     ← Leitura + chunking
+│   ├── etapa 02 embeddings.py    ← Vetorização com Ollama
+│   ├── etapa 03 indexing.py      ← Persistência no ChromaDB
+│   ├── etapa 04 retrieval.py     ← Busca semântica
+│   └── etapa 05 generation.py    ← Prompt otimizado + Mistral
 ├── 📄 config.py                 ← Todos os parâmetros centralizados
 ├── 📄 pipeline.py               ← Orquestrador principal
 └── 📄 requirements.txt           ← Dependências do projeto
@@ -23,11 +23,11 @@ RAG_for_ai_engineers/
 |---------|-----------|
 | **dados/** | Diretório para armazenar arquivos .txt e .pdf a serem indexados |
 | **chroma_db/** | Banco de dados vetorial (auto-gerado durante indexação) |
-| **etapa_01__ingestion.py** | Leitura de documentos + chunking automático |
-| **etapa_02__embeddings.py** | Vetorização de textos usando modelo Ollama |
-| **etapa_03__indexing.py** | Persistência dos embeddings no ChromaDB |
-| **etapa_04__retrieval.py** | Busca semântica de contextos relevantes |
-| **etapa_05__generation.py** | Geração de respostas com prompt otimizado |
+| **ingestion.py** | Leitura de documentos + chunking automático |
+| **embeddings.py** | Vetorização de textos usando modelo Ollama |
+| **indexing.py** | Persistência dos embeddings no ChromaDB |
+| **retrieval.py** | Busca semântica de contextos relevantes |
+| **generation.py** | Geração de respostas com prompt otimizado |
 | **config.py** | Configurações centralizadas de parâmetros |
 | **pipeline.py** | Orquestrador que controla o fluxo completo |
 
