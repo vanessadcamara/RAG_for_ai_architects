@@ -56,3 +56,10 @@ adequado para a pergunta, utilizando similaridade entre esses vetores
 
 ### o que é o embedding? 
 -> uma representação numérica do texto que pode ser recuperado no espaço vetorial
+
+### Como funciona a busca vetorial (retrieval)
+  1. A pergunta é convertida em vetor com o mesmo modelo de embedding
+  2. O ChromaDB calcula a distância cosseno entre o vetor da pergunta
+     e todos os vetores armazenados
+  3. Os TOP_K chunks com menor distância (mais similares) são retornados
+ 
