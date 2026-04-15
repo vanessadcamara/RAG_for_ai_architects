@@ -2,3 +2,4 @@ pdfplumber
 re
 os
 requests
+chromadb
