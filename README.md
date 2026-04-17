@@ -31,21 +31,21 @@ RAG_for_ai_engineers/
 | **config.py** | Configurações centralizadas de parâmetros |
 | **pipeline.py** | Orquestrador que controla o fluxo completo |
 
-# 1. Instalar dependências
+## 1. Instalar dependências
 pip install -r requirements.txt
 
-# 2. Baixar os modelos (uma vez)
+## 2. Baixar os modelos (uma vez)
 ollama pull nomic-embed-text
 ollama pull mistral
 
-# 3. Colocar seus arquivos em dados/ e indexar
+## 3. Colocar seus arquivos em dados/ e indexar
 python pipeline.py --indexar
 
-# 4. Fazer perguntas
+## 4. Fazer perguntas
 python pipeline.py
 python pipeline.py -p "O que é MLflow?"
 
-# Q&A
+## Q&A
 ### por que fazemos o chunk dos textos? 
 -> porque o modelo tem um limite de tokens que consegue processar. Dessa forma, garantimos que todo 
 texto é processado e recuperado em partes 
